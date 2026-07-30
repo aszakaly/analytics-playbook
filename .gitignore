@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 .venv/
 venv/
+
+# build artifact — regenerate by zipping the skill folder
+*.zip
