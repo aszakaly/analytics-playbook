@@ -40,11 +40,7 @@ boolean / structural. For each:
 ## Output
 
 A clean profile (tables grouped by column type) **plus** a short, ranked list of
-the issues that will need a cleaning decision. End the stage here and let the
-user react — don't roll straight into cleaning.
-
-## What to carry forward
-
-Note the specific decisions discovery has surfaced (e.g. "20% of rows have no
-customer ID", "cancellations present", "Dec overlaps across two sheets"). These
-become the gated choices in Stage 2.
+the specific decisions discovery has surfaced — e.g. "20% of rows have no
+customer ID", "cancellations present", "Dec overlaps across two sheets". Those
+become the gated choices in Stage 2. End the stage here and let the user react;
+don't roll straight into cleaning.

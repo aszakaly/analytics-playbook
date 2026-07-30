@@ -57,7 +57,7 @@ trimmed/upper-cased", "Quantity clipped at p99.9").
 - `*_clean.csv` (or parquet) — the cleaned data, plus any derived columns the
   analysis needs (e.g. a Revenue = qty × price column).
 - `cleaning_audit_removed_rows.csv` — every removed row, tagged.
-- A printed/spoken **audit funnel** so the user sees where rows went and can
-  challenge any single rule (filter the audit by reason to inspect).
+- A printed **audit funnel** so the user sees where rows went and can challenge
+  any single rule (filter the audit by reason to inspect).
 
-See `templates/clean_script_scaffold.py` for a runnable skeleton.
+Runnable skeleton: `templates/clean_script_scaffold.py`.
