@@ -204,15 +204,15 @@ Byte counts, before → after:
 
 | File | Before | After | Δ |
 |---|---|---|---|
-| `SKILL.md` | 14,617 | 13,855 | −762 |
+| `SKILL.md` | 14,617 | 13,857 | −760 |
 | `README.md` | 2,525 | 2,042 | −483 |
 | `references/1-discovery.md` | 2,139 | 2,059 | −80 |
 | `references/2-cleaning-audit.md` | 2,787 | 2,771 | −16 |
 | `references/3-method-selection.md` | 4,282 | 4,232 | −50 |
-| `references/4-outputs.md` | 8,418 | 7,832 | −586 |
+| `references/4-outputs.md` | 8,418 | 7,735 | −683 |
 | `references/5-cross-examination.md` | 4,831 | 4,777 | −54 |
 | `references/6-repo-readme.md` | 2,746 | 2,630 | −116 |
-| **total** | **42,345** | **40,198** | **−2,147 (−5.1%)** |
+| **total** | **42,345** | **40,103** | **−2,242 (−5.3%)** |
 
 `SKILL.md` absorbed ~2.6k of newly mandated text (principles 1 and 6, the Stage 0
 spec table, the Stage 5 framing block, the Stage 7 trigger, the rewritten
@@ -268,6 +268,17 @@ description) and still shrank, so roughly 3.4k of duplication came out of it.
   into v1.0 as a paragraph (all facts kept: 20/20, the eval-set path, the 401 CLI
   workaround). Historical entries tightened in prose only — every change and every
   "prompted by" reason is preserved.
+- **Personal-brand specifics in Stage 4** — the hardcoded palette and motif
+  (cobalt/steel on graphite, mono uppercase eyebrows, drafted offset-frame cards,
+  registration-cross + monogram, indexed mono labels) in `4-outputs.md`, and the
+  unconditional `akos-szakaly-brand` invocation in `SKILL.md` Stage 4. Replaced by
+  a **brand slot**: "the user's own brand skill if they have one", with the skill
+  named once as an example of what fills it. Two reasons — content change 5
+  generalises the skill, but Stage 4 still resolved to one person's identity (a
+  reader without that skill hits a failed Skill call; a reader who follows the
+  palette literally ships someone else's brand), and a brand skill is the source
+  of truth for its own tokens, so restating them here was the same duplication
+  this pass removed everywhere else.
 
 **Deliberately kept**
 
@@ -281,10 +292,6 @@ description) and still shrank, so roughly 3.4k of duplication came out of it.
   reproduction requirement, `--selftest`, and the render QA in `4-outputs.md`
   (rendering a deck to images and screenshotting a dashboard inspects an artifact
   the model cannot otherwise see — it is not a re-check of its own reasoning).
-- The `akos-szakaly-brand` reference in the mockup trio: it is one of three named
-  style directions and dropping it would remove function, not bloat. A user of
-  another brand substitutes their own skill there.
-
 **Fixed in passing**
 
 - `6-repo-readme.md` was still titled "Stage 5 — Reproducible repository", stale

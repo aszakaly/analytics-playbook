@@ -145,8 +145,8 @@ everything downstream:
 - or a **combination**.
 
 Then, whatever the medium: **audience first → show look-and-feel options in a few
-style directions before building** (a safe generic, the user's brand via
-`akos-szakaly-brand`, a modern option) → build the chosen one → **render it and
+style directions before building** (a safe generic, the user's own brand skill if
+they have one, a modern option) → build the chosen one → **render it and
 inspect before delivering**. Audience patterns, deck conventions, chart
 catalogue, the interactive-HTML pattern, and the production-script contract:
 `references/4-outputs.md`; scaffold: `templates/dashboard_build_scaffold.py`.

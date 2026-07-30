@@ -24,8 +24,7 @@ any slide limit.
 - **PPTX** via `pptxgenjs` (Node). Use **Office-safe fonts** (Arial / Cambria /
   Courier New) so the render is faithful everywhere — the brand fonts won't be on
   the viewer's machine. Carry the brand through **palette + layout + motif**
-  (cobalt/steel on graphite, mono uppercase eyebrows, drafted offset-frame cards,
-  registration-cross + monogram).
+  instead.
 - **Self-contained HTML** via Chart.js + the **real brand fonts** (Google Fonts),
   slides at 1280×720 scaled to fit, arrow-key/scroll nav, one slide per print
   page.
@@ -37,7 +36,8 @@ any slide limit.
 - In the HTML builder, inject data via a `type="application/json"` block or
   placeholder replacement, and **syntax-check the generated chart `<script>`**
   (`node --check`) — one malformed chart config silently blanks *every* chart.
-- Use the `akos-szakaly-brand` skill for tokens, fonts, and slide-type patterns.
+- If the user has a brand skill (e.g. `akos-szakaly-brand`), take tokens, fonts,
+  and slide-type patterns from it rather than inventing them here.
 
 ## B. Dashboards
 
@@ -53,10 +53,9 @@ dashboards — confirm which are needed:
 
 **Mockups before building.** Static look-and-feel mockups in a few distinct
 directions, for the user to choose from before any real build. Good default trio:
-a **safe generic** clean style; the **user's brand** (`akos-szakaly-brand` —
-cobalt/graphite, sharp "drafted" cards, mono metrics, indexed mono labels); a
-**modern** option (SaaS/BI navy-sidebar + blue accents). Render inline with real
-headline numbers and placeholder rows marked as such.
+a **safe generic** clean style; the **user's own brand**, from their brand skill
+if one exists; a **modern** option (SaaS/BI navy-sidebar + blue accents). Render
+inline with real headline numbers and placeholder rows marked as such.
 
 **Build: self-contained interactive HTML** by default, with the real data embedded
 as JSON so it opens in any browser with no server (ask if a live Streamlit/Dash
