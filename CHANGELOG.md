@@ -163,7 +163,11 @@ Added the **mortgage maximum-loan model** as a second **worked reference** in
 modelling → decks + production-script + cross-examination path the RFM example
 doesn't. Prompted by the section only citing RFM.
 
-## v1.9 — 2026-07-30 — consolidation pass
+## v2.0 — 2026-07-30 — consolidation pass
+
+A major version rather than v1.9: this is the first pass that changed the
+playbook's shape rather than its content, and generalised it from a personal
+artifact into something shareable.
 
 Ten additive entries in, the playbook had accumulated the predictable failure
 mode of an additive-only skill: `SKILL.md` restated most of what the reference
@@ -227,7 +231,7 @@ final shape of change 5):
    under-weighted, whereas a required line in the profile forces the question
    every time and puts the answer where a reader can judge it.
 
-### CONSOLIDATION_LOG — v1.9
+### CONSOLIDATION_LOG — v2.0
 
 Byte counts, before → after:
 
