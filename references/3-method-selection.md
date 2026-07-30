@@ -2,7 +2,7 @@
 
 The goal is a method that is both **fit for the question** and **defensible**.
 Don't silently pick one and compute — present the options, recommend, decide,
-then validate.
+then cross-check.
 
 ## The decision pattern
 
@@ -66,12 +66,11 @@ comparison (full vs reduced) rather than asserting.
 - Clustering: elbow (inertia) + silhouette to justify k, then cross-tab the
   data-driven clusters against the chosen scheme.
 - Models: hold-out / cross-validation, baseline comparison, residual checks.
-- Always sanity-check distributions and that group sizes are usable.
 
 ## Business-readiness test
 
-Whatever the method, each output group/segment/score band should have a
-**clear action attached**. If you can't say what someone would *do* with a
+Whatever the method, each output group/segment/score band needs a **clear action
+attached** and a **usable size**. If you can't say what someone would *do* with a
 segment, the scheme isn't done. Carry an action/strategy per group forward into
 the dashboards (operative dashboards need it explicitly).
 
