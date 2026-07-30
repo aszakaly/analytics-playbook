@@ -167,8 +167,8 @@ doesn't. Prompted by the section only citing RFM.
 Ten additive entries in, the playbook had accumulated the predictable failure
 mode of an additive-only skill: `SKILL.md` restated most of what the reference
 files already specified. This entry is a **reducing** pass — see
-`CONSOLIDATION_LOG` below for every merge and deletion. Six content changes
-landed alongside it:
+`CONSOLIDATION_LOG` below for every merge and deletion. Eight content changes
+landed alongside it (changes 7 and 8 came out of review):
 
 1. **Principle 1 rewritten: "Sequence is gated, not drip-fed."** The whole job is
    stated up front (question, decision + owner, audience, data + provenance/timing,
@@ -197,6 +197,22 @@ landed alongside it:
    explicit skill-level scope (executing an analytics project) and out-of-scope
    (raw data collection, model/output governance, later technical management or
    deployment of the output).
+7. **Stage 4's personal-brand reference became a brand slot** — "the user's own
+   brand skill if they have one", with `akos-szakaly-brand` named once as an
+   example of what fills it. Detail under *Deleted* below.
+8. **Stage 1's lists declared a floor, not a ceiling** (`1-discovery.md`), with a
+   generative rule — *what would make this column wrong, given its role in the
+   grain?* — and a required output line stating **which checks were added beyond
+   the lists, and why** ("none" is valid), where an added check must point at a
+   decision Stage 2 will face. Prompted by the observation that an enumerated
+   checklist reads to a model as a specification to satisfy, so the list had
+   silently become a ceiling, and no list can anticipate an unseen dataset. This
+   change is an **addition, not a consolidation** (+507 bytes): the fix is a
+   generative rule plus an artifact requirement rather than more rows, because
+   more rows would go stale and repeat the bloat this pass removed. The artifact
+   requirement is doing the work — an exhortation to think past the list gets
+   under-weighted, whereas a required line in the profile forces the question
+   every time and puts the answer where a reader can judge it.
 
 ### CONSOLIDATION_LOG — v1.9
 
@@ -206,17 +222,22 @@ Byte counts, before → after:
 |---|---|---|---|
 | `SKILL.md` | 14,617 | 13,857 | −760 |
 | `README.md` | 2,525 | 2,042 | −483 |
-| `references/1-discovery.md` | 2,139 | 2,059 | −80 |
+| `references/1-discovery.md` | 2,139 | 2,646 | **+507** (addition, see change 8) |
 | `references/2-cleaning-audit.md` | 2,787 | 2,771 | −16 |
 | `references/3-method-selection.md` | 4,282 | 4,232 | −50 |
 | `references/4-outputs.md` | 8,418 | 7,735 | −683 |
 | `references/5-cross-examination.md` | 4,831 | 4,777 | −54 |
 | `references/6-repo-readme.md` | 2,746 | 2,630 | −116 |
-| **total** | **42,345** | **40,103** | **−2,242 (−5.3%)** |
+| **total** | **42,345** | **40,690** | **−1,655 (−3.9%)** |
 
 `SKILL.md` absorbed ~2.6k of newly mandated text (principles 1 and 6, the Stage 0
 spec table, the Stage 5 framing block, the Stage 7 trigger, the rewritten
 description) and still shrank, so roughly 3.4k of duplication came out of it.
+
+`1-discovery.md` is the one file above its baseline, and it is an **addition, not
+a failed consolidation** — content change 8 below. Consolidation alone took the
+in-scope total to 40,103 (−5.3%); the discovery addition brings it to 40,690
+(−3.9%).
 
 **Merged**
 

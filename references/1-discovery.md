@@ -6,6 +6,12 @@ anything, and surface the issues that will need decisions during cleaning.
 If a data-profiling skill (e.g. `explore-data`) is available, run it and build
 on its output rather than reinventing the profile.
 
+These lists are a floor, not a ceiling: they hold what has recurred across
+projects, and cannot anticipate a dataset nobody has seen yet. The generative
+question for each column is **what would make this column wrong, given its role
+in the grain?** — then check that. Geospatial, free text, event logs, panel data
+and multi-currency amounts all fail in ways the lists below don't name.
+
 ## Table-level
 
 - Row count, column count, file/sheet structure (multiple sheets? combine?).
@@ -44,3 +50,7 @@ the specific decisions discovery has surfaced — e.g. "20% of rows have no
 customer ID", "cancellations present", "Dec overlaps across two sheets". Those
 become the gated choices in Stage 2. End the stage here and let the user react;
 don't roll straight into cleaning.
+
+Also state **which checks you added beyond the lists above, and why** — "none" is
+a valid answer. An added check must point at a decision Stage 2 will face; a
+longer profile is not a better one.
