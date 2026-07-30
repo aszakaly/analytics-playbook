@@ -194,10 +194,17 @@ Offer the edits, and on approval: update the relevant file(s) here, add a dated
 `feedback`/`project` notes. Keep changes general — fix the principle, not just
 the one example. Don't rewrite the skill silently.
 
-After every fifth changelog entry, or when any reference file passes ~8k, run a
-consolidation pass instead of another additive edit. Consolidation is itself a
-Stage 7 output and gets its own dated log entry recording what was merged or
-removed and why.
+**Keeping the playbook small.** Every additive edit pays rent: name the file the
+text belongs in, and apply principle 6 to it — if it is already said elsewhere,
+link instead. That is what keeps consolidation rare.
+
+After every fifth changelog entry, or when `SKILL.md` or a reference file passes
+~8k, **say that a consolidation is due** and let the user decide. Deferral is a
+valid answer and is recorded in the next entry as deferred, so the debt stays
+visible. A consolidation that does run gets its own branch and PR, keeps every
+worked example, hard number and stated reason a rule exists (only restatement and
+duplication go), and logs every merge and deletion with before/after byte counts
+in a `CONSOLIDATION_LOG`.
 
 ---
 

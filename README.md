@@ -37,8 +37,8 @@ Claude uses to decide when to trigger the skill.
 ## Contributing
 
 This playbook is meant to **learn** — Stage 7 (Retrospective) is a standing
-invitation to propose edits after every project, and every fifth entry triggers a
-consolidation pass rather than another additive one. See
+invitation to propose edits after every project, and every fifth entry raises a
+consolidation reminder the maintainer can act on or defer. See
 [CHANGELOG.md](CHANGELOG.md) for how changes are recorded.
 
 ## License

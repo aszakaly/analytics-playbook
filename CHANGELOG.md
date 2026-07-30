@@ -10,9 +10,10 @@ How to evolve it:
 - Add a dated entry below: what changed, and the observation that prompted it.
 - Write durable user preferences to memory (`feedback`/`project`) so they carry
   across projects, and link them from here if useful.
-- **After every fifth entry, or when a reference file passes ~8k, consolidate
-  instead of adding.** A consolidation pass gets its own entry plus a
-  `CONSOLIDATION_LOG` section accounting for every merge and deletion.
+- **After every fifth entry, or when `SKILL.md` or a reference file passes ~8k,
+  flag that a consolidation is due.** Acting on it is the maintainer's call; a
+  deferral is recorded here as deferred. A consolidation that runs gets its own
+  entry plus a `CONSOLIDATION_LOG` accounting for every merge and deletion.
 
 ---
 
@@ -168,7 +169,8 @@ Ten additive entries in, the playbook had accumulated the predictable failure
 mode of an additive-only skill: `SKILL.md` restated most of what the reference
 files already specified. This entry is a **reducing** pass — see
 `CONSOLIDATION_LOG` below for every merge and deletion. Eight content changes
-landed alongside it (changes 7 and 8 came out of review):
+landed alongside it (changes 7 and 8 came out of review, which also settled the
+final shape of change 5):
 
 1. **Principle 1 rewritten: "Sequence is gated, not drip-fed."** The whole job is
    stated up front (question, decision + owner, audience, data + provenance/timing,
@@ -190,9 +192,20 @@ landed alongside it (changes 7 and 8 came out of review):
 4. **New principle 6: "Deliverables are sized to the decision."** Cover the
    substance, don't pad; prefer a table or numbered decision list to prose; link
    rather than restate. This is the principle the consolidation itself applies.
-5. **New Stage 7 meta-trigger.** After every fifth changelog entry, or when a
-   reference file passes ~8k, consolidate instead of adding — and log it. Prompted
-   by this pass: nothing in the skill previously made shrinking a scheduled event.
+5. **New Stage 7 size discipline.** Every additive edit pays rent (name the file
+   it belongs in; apply principle 6 and link rather than restate). After every
+   fifth changelog entry, or when `SKILL.md` or a reference file passes ~8k,
+   Stage 7 **says a consolidation is due** and the user decides — deferral is a
+   valid answer, recorded in the next entry as deferred, so the debt stays visible
+   without becoming an obligation. A consolidation that runs gets its own branch
+   and PR, keeps every worked example, hard number and stated reason a rule
+   exists, and logs every merge and deletion with byte counts. Prompted by this
+   pass — nothing previously made shrinking a scheduled event — and settled in
+   review: the first draft forced a consolidation *instead of* an additive edit,
+   which would make a retro withhold a genuine improvement to do housekeeping, and
+   deleting is riskier than adding, so it wants a deliberate session rather than a
+   due date. The rent rule is the load-bearing half; the reminder only makes drift
+   visible.
 6. **Description and objective generalised** for sharing beyond one user, with
    explicit skill-level scope (executing an analytics project) and out-of-scope
    (raw data collection, model/output governance, later technical management or
@@ -220,24 +233,25 @@ Byte counts, before → after:
 
 | File | Before | After | Δ |
 |---|---|---|---|
-| `SKILL.md` | 14,617 | 13,857 | −760 |
-| `README.md` | 2,525 | 2,042 | −483 |
+| `SKILL.md` | 14,617 | 14,328 | −289 |
+| `README.md` | 2,525 | 2,046 | −479 |
 | `references/1-discovery.md` | 2,139 | 2,646 | **+507** (addition, see change 8) |
 | `references/2-cleaning-audit.md` | 2,787 | 2,771 | −16 |
 | `references/3-method-selection.md` | 4,282 | 4,232 | −50 |
 | `references/4-outputs.md` | 8,418 | 7,735 | −683 |
 | `references/5-cross-examination.md` | 4,831 | 4,777 | −54 |
 | `references/6-repo-readme.md` | 2,746 | 2,630 | −116 |
-| **total** | **42,345** | **40,690** | **−1,655 (−3.9%)** |
+| **total** | **42,345** | **41,165** | **−1,180 (−2.8%)** |
 
-`SKILL.md` absorbed ~2.6k of newly mandated text (principles 1 and 6, the Stage 0
-spec table, the Stage 5 framing block, the Stage 7 trigger, the rewritten
-description) and still shrank, so roughly 3.4k of duplication came out of it.
+`SKILL.md` absorbed ~3.1k of new text (principles 1 and 6, the Stage 0 spec
+table, the Stage 5 framing block, the Stage 7 size discipline, the rewritten
+description) and still came in under its baseline, so roughly 3.4k of duplication
+came out of it.
 
 `1-discovery.md` is the one file above its baseline, and it is an **addition, not
-a failed consolidation** — content change 8 below. Consolidation alone took the
-in-scope total to 40,103 (−5.3%); the discovery addition brings it to 40,690
-(−3.9%).
+a failed consolidation** — content change 8. Consolidation alone took the in-scope
+total to 40,103 (−5.3%); the two additions that came out of review — change 8
+(+507) and change 5's final form (+471) — bring it to 41,165 (−2.8%).
 
 **Merged**
 
