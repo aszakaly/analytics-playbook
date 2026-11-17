@@ -337,5 +337,18 @@ total to 40,103 (−5.3%); the two additions that came out of review — change 
   since the v1.6 renumber; now "Stage 6".
 - The `CHANGELOG.md` header said retrospectives are Stage 6; corrected to Stage 7.
 
+## Unreleased — 2026-11-16
+
+- Stage 4 now points chart construction, labelling and number QA to the new
+  standalone `consulting-charts` skill, and slide-level rules to `not-ai-decks`.
+  The dashboard catalogue's "one callout box for the single key insight" became
+  "one data-attached callout", so the playbook no longer recommends the summary
+  box `not-ai-decks` forbids. Prompted by the mortgage exec deck rebuild, where a
+  blind judge found the original's charts (unlabelled bars, unitless axis,
+  meaningless colours, boxed scatter) were its weakest part.
+- The two PPTX build lessons here (unreliable native scatter, Office-safe fonts)
+  were copied into `consulting-charts/references/renderers.md` so they apply
+  outside analytics projects too.
+
 <!-- ## vNEXT — <date>
 - <what changed> — prompted by <observation from the latest project>. -->
