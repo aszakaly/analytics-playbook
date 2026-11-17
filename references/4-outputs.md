@@ -38,6 +38,8 @@ any slide limit.
   (`node --check`) — one malformed chart config silently blanks *every* chart.
 - If the user has a brand skill (e.g. `akos-szakaly-brand`), take tokens, fonts,
   and slide-type patterns from it rather than inventing them here.
+- Charts and data tables follow the `consulting-charts` skill (chart choice,
+  labels, annotation, number QA); slide-level rules follow `not-ai-decks`.
 
 ## B. Dashboards
 
@@ -74,8 +76,9 @@ horizontal bars sorted by value, donut for top-N share; imbalance (share of
 population vs share of value) → paired bars per group; trend/seasonality → line
 or area, recurring peaks marked; distribution → histogram, skew flagged;
 per-record detail → dense table with mono numerals, group color dots, score
-badges; plus KPI cards for headline metrics and one callout box for the single
-key insight.
+badges; plus KPI cards for headline metrics and one data-attached callout for
+the single key insight. Chart construction, labelling and number QA follow the
+`consulting-charts` skill.
 
 ## C. Production-ready modelling scripts
 
